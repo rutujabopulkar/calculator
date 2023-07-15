@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" id="txtdis">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="removeall()" class="opr">
+                    <input type="button" value="DE" onclick="dlt()" class="opr">
+                    <input type="button" value="." onclick="storeData('.')" class="opr">
+                    <input type="button" value="/" onclick="storeData('/')" class="opr">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="storeData('7')">
+                    <input type="button" value="8" onclick="storeData('8')">
+                    <input type="button" value="9" onclick="storeData('9')">
+                    <input type="button" value="*" onclick="storeData('*')" class="opr">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="storeData('4')">
+                    <input type="button" value="5" onclick="storeData('5')">
+                    <input type="button" value="6" onclick="storeData('6')">
+                    <input type="button" value="-" onclick="storeData('-')" class="opr">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="storeData('1')">
+                    <input type="button" value="2" onclick="storeData('2')">
+                    <input type="button" value="3" onclick="storeData('3')">
+                    <input type="button" value="+" onclick="storeData('+')" class="opr">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="storeData('00')">
+                    <input type="button" value="0" onclick="storeData('0')">
+                    <input type="button" value="=" onclick="calData()" class="eql">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
